@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16sp"
+    android:background="@drawable/preview2"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/hulk_01"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/hulk_01"/>
+
+        <ImageView
+            android:id="@+id/hulk_02"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/hulk_01"/>
+
+        <ImageView
+            android:id="@+id/hulk_03"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/hulk_01"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="INICIAR" />
+
+    <TextView
+        android:id="@+id/pts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Pontos: 0"
+        android:textColor="#FF0000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/recorde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Recorde: 0"
+        android:textColor="#FF0000"
+        android:textSize="25sp" />
+</RelativeLayout>
